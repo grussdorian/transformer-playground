@@ -148,6 +148,7 @@ class BigramLanguageModel(nn.Module):
         super().__init__()
         # number of embedding dimensions n_embed
         self.token_embedding_table = nn.Embedding(vocab_size, n_embed)
+        self.position_embedding_table = nn.Embedding(block_size, n_embed)
         self.lm_head = nn.Linear(n_embed, vocab_size)  # Language modeling head
 
     def forward(self, idx, targets=None):
