@@ -1,6 +1,6 @@
 # A playground implementing a simple bigram language model
 
-### Model is implements from scratch
+### Model implements
 
 1. Self attention
 2. Multi headed attention
